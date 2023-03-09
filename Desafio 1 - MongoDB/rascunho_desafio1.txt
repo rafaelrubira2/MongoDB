@@ -1,0 +1,74 @@
+Faça queries para as seguintes perguntas:
+1 - Quantos restaurantes estão cadastrados?
+2 - Quantos restaurantes estão abertos?
+3 - Quantos restaurantes estão abertos e possuem preço maior que 3?
+4 - Quais restaurantes tem wifi?
+5 - Quantos restaurantes italianos?
+6 - Quantos restaurantes brasileiro ou churrascaria?
+
+--------------------------------------------
+
+1 - Quantos restaurantes estão cadastrados?
+
+Script:
+db.restaurantes.count()
+
+Resposta: 
+1000
+
+2 - Quantos restaurantes estão abertos?
+
+Script:
+db.restaurantes.find({aberto: {$eq: true}}).count()
+
+Resposta: 
+748
+
+3 - Quantos restaurantes estão abertos e possuem nota maior que 3?
+
+Script:
+db.restaurantes.find({$and: [{aberto: {$eq: true}}, {preco: {$gt: 3}}]}).count()
+
+Resposta:
+193
+
+4 - Quantos restaurantes tem wifi?
+
+Script:
+
+db.restaurantes.find({tags: "wifi"})
+
+Resposta:
+508
+
+5 - Quantos restaurantes italianos?
+
+Script:
+db.restaurantes.find({cozinha: {$eq: "italiano"}}).count()
+
+Resposta:
+118
+
+6 - Quantos restaurantes brasileira ou churrascaria?
+
+Script:
+db.restaurantes.find({$or: [{cozinha: {$eq: "brasileira"}}, {cozinha: {$eq: "churrascaria"}}]}).count()
+
+ou
+
+db.restaurantes.find({cozinha: {$in: ["brasileira", "churrascaria"]}}).count()
+
+Resposta:
+228
+
+
+Extra:
+
+4 - Quais restaurantes tem wifi?
+
+db.restaurantes.find({tags: "wifi"}, {_id: 0, anoAbertura: 0, preco: 0, cozinha: 0, tags: 0, aberto: 0, avaliacoes: 0})
+
+Equivalente a:
+
+db.restaurantes.find({tags: "wifi"}, {restaurante: 1, _id: 0}
+
