@@ -1,0 +1,23 @@
+// Anotações de aula 2
+
+db.usuarios.insertOne({nome: 'Lohann', idade: 30, cor: 'vermelho', dtn: 1993})
+db.pokemons.insertMany([
+	{nome: "Pikachu"},
+	{nome: "Charmander"},
+	{nome: "Squirtle"},
+	{nome: "Bulbasauro"},
+	{nome: "Zapdos"}
+	]);
+
+db.usuarios.createIndex({idade: 1})
+// Coluna idade; Tipo de indíce: 1
+
+db.usuarios.updateOne({nome: {$eq: "Lohann"}}, {$set: {pokemons: db.pokemons.find().map(d => d._id)}})
+
+load("query_create_collection_aula2.js")
+db.usuarios.insertOne({ nome: "Rafael", idade: 1000 })
+db.usuarios.insertOne({ nome: 2, idade: 10 })
+db.usuarios.insertOne({ nome: "Rafael", idade: 10, ano: 2023 })
+
+
+db.getCollectionInfos({name: "usuarios"})

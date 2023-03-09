@@ -1,0 +1,64 @@
+//[MongoDB] Aula 01 - Introdução, coleções e documentos
+
+// Exibir banco de dados em uso:
+db
+
+// Alterar/Criar banco de dados
+use <database>
+
+// Listar Banco de dados
+show dbs
+
+// Create a New Database and Collection
+// https://www.mongodb.com/docs/mongodb-shell/run-commands/#create-a-new-database-and-collection
+use meuBancoDeDados
+
+// Inserir
+db.movies.insertOne(
+    {
+      _id: id_filme,
+      nome: "O Poderoso Chefão"
+    }
+  )
+
+// Inserir com um ID criado manualmente
+id_filme = ObjectId()
+db.movies.insertOne(
+  {
+    _id: id_filme,
+    nome: "O Poderoso Chefão"
+  }
+)
+
+db.movies.insertOne(
+  {
+    title: "The Favourite",
+    genres: [ "Drama", "History" ],
+    runtime: 121,
+    rated: "R",
+    year: 2018,
+    directors: [ "Yorgos Lanthimos" ],
+    cast: [ "Olivia Colman", "Emma Stone", "Rachel Weisz" ],
+    type: "movie"
+  }
+)
+
+
+
+//Inserior varios documentos
+
+// Ler todos os documentos de uma coleção
+    db.usuarios.find()
+    
+    // Ler documentos com filtro por nome
+    db.usuarios.find( { nome: { $in: [ "Jose", "Fabio" ] } } )
+    
+    
+//Queries
+
+// Ler todos os documentos de uma coleção
+db.usuarios.find()
+
+// Ler documentos com filtro por nome
+db.usuarios.find( { nome: { $in: [ "Jose", "Fabio" ] } } )
+
