@@ -37,7 +37,10 @@ Resposta:
 Script:
 
 db.restaurantes.find({tags: "wifi"})
-
+db.restaurantes.aggregate([
+	{ $match: {cozinha: 'brasileira' }},
+	{ $group: {_id: "$cozinha", precoMedio: {$avg: "$preco"}}}
+	])
 Resposta:
 508
 
