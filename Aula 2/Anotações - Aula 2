@@ -21,3 +21,7 @@ db.usuarios.insertOne({ nome: "Rafael", idade: 10, ano: 2023 })
 
 
 db.getCollectionInfos({name: "usuarios"})
+
+
+// [MongoDB] - Updates e Schema
+// /home/bradesco-puc/Documentos/CursoDevOps/MongoDB/Aula 2/Anotações - Aula 2

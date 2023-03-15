@@ -1,0 +1,26 @@
+[MongoDB] - Desafio Queries & Agreggators
+
+Baixe esse script do desafio na maquina ubuntu:
+desafio.js
+
+Faça queries para as seguintes perguntas:
+1 - Quantos restaurantes estão cadastrados?
+2 - Quantos restaurantes estão abertos?
+3 - Quantos restaurantes estão abertos e possuem preço maior que 3?
+4 - Quais restaurantes tem wifi?
+5 - Quantos restaurantes de cozinha italiano?
+6 - Quantos restaurantes de cozinha `brasileira` ou `churrascaria`?
+
+Referencias:
+- https://www.mongodb.com/docs/manual/reference/operator/query/
+Links to an external site.
+- https://www.mongodb.com/docs/manual/tutorial/query-arrays/ Links to an external site.
+
+Extras:
+ordernação: https://www.mongodb.com/docs/manual/reference/method/cursor.sort/ Links to an external site.
+
+Gabarito:
+gabarito.js
+
+Aggregators:
+aggregators.js
