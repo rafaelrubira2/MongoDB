@@ -1,0 +1,284 @@
+    1  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+    2  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+    3  [200~echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list~
+    4  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+    5  sudo apt-get update
+    6  echo "mongodb-org hold" | sudo dpkg --set-selections
+    7  echo "mongodb-org-database hold" | sudo dpkg --set-selections
+    8  echo "mongodb-org-server hold" | sudo dpkg --set-selections
+    9  echo "mongodb-mongosh hold" | sudo dpkg --set-selections
+   10  echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+   11  echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+   12  sudo apt-get install -y mongodb-org
+   13  echo "mongodb-org hold" | sudo dpkg --set-selections
+   14  echo "mongodb-org-database hold" | sudo dpkg --set-selections
+   15  echo "mongodb-org-server hold" | sudo dpkg --set-selections
+   16  echo "mongodb-mongosh hold" | sudo dpkg --set-selections
+   17  echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+   18  echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+   19  sudo systemctl start mongod
+   20  sudo systemctl enable mongod
+   21  sudo systemctl stop mongod
+   22  ls -la
+   23  ip-config
+   24  ipconfig
+   25  ls -la
+   26  cd Downloads
+   27  ls -la
+   28  cp id_ed25519 ./.ssh
+   29  cd ../.ssh
+   30  ls -la
+   31  cd ..
+   32  cd Downloads
+   33  copy id_ed25519 ../.ssh
+   34  cp id_ed25519 ../.ssh
+   35  ls -la
+   36  rm .ssh
+   37  ls -la
+   38  cd ;;
+   39  cd ..
+   40  cd .ssh
+   41  cd ..
+   42  chmod 0700 .ssh
+   43  cd .ssh
+   44  curl http://github.com/rafael.rubira.keys >> authorized_keys
+   45  sudo apt install curl
+   46  curl http://github.com/rafael.rubira.keys >> authorized_keys
+   47  ls -la
+   48  cat authorized_keys 
+   49  vim authorized_keys 
+   50  sudo apt install vim
+   51  vim authorized_keys 
+   52  curl http://github.com/rafaelrubira2.keys >> authorized_keys
+   53  cat authorized_keys 
+   54  curl https://github.com/rafaelrubira2.keys >> authorized_keys
+   55  cat authorized_keys 
+   56  cd ..
+   57  cd Documents
+   58  ls -la
+   59  cd Documentos
+   60  ls -la
+   61  mkdir CursoDevOps
+   62  cd CursoDevOps/
+   63  mkdir MongoDB
+   64  cd MongoDB
+   65  cd ..
+   66  mkdir Oracle
+   67  cd Oracle
+   68  cd ..
+   69  cd MongoDV
+   70  cd MongoDB
+   71  mongosh
+   72  sudo systemctl status mongod
+   73  mongosh
+   74  ls -la
+   75  touch query_aula1.js
+   76  vim query_aula1.js 
+   77  mongosh
+   78  vim query_aula1.js 
+   79  mongosh
+   80  vim query_aula1.js 
+   81  git init
+   82  sudo apt install git
+   83  git init
+   84  git commit -m "Aula1"
+   85  git config --global user.name "rafaelrubira2"
+   86  git config --global user.email "rafaelrubira2@gmail.com"
+   87  git commit -m "Aula1"
+   88  git add .
+   89  git commit -m "Aula1"
+   90  git branch -M main
+   91  git remote add origin git@github.com:rafaelrubira2/MongoDB.git
+   92  git push -u origin main
+   93  cd ~/.ssh
+   94  ls -la
+   95  chmod 0700 id_ed25519
+   96  cd ..
+   97  cd Documentos/CursoDevOps/MongoDB
+   98  ls -la
+   99  git push -u origin main
+  100  ls -la
+  101  vim query_aula1.js 
+  102  mongosh
+  103  vim query_aula1.js 
+  104  mongosh
+  105  vim query_aula1.js 
+  106  mongosh
+  107  vim query_aula1.js 
+  108  mongosh
+  109  ls -la
+  110  cp query_aula1.js query_aula1_mongo.js
+  111  ls -la
+  112  vim query_aula1_mongo.js 
+  113  ls -la
+  114  dir status
+  115  git status
+  116  git add .
+  117  git commit -m "Aula1-Ajustes"
+  118  git push origin main
+  119  exit
+  120  ls -la
+  121  cd Documentos/
+  122  ls -la
+  123  cd CursoDevOps/
+  124  ls -la
+  125  cd MongoDB/
+  126  ls -la
+  127  LS -LA
+  128  ls -la
+  129  git status
+  130  mongosh
+  131  ls -la
+  132  mongosh
+  133  ls -la
+  134  cp query_aula1_mongo.js query_pokemons_aula2.js
+  135  vim query_pokemons_aula2.js 
+  136  mongosh
+  137  vim query_pokemons_aula2.js 
+  138  mongosh
+  139  touch query_create_collection_aula2.js
+  140  vim query_create_collection_aula2.js 
+  141  mongosh
+  142  git status
+  143  git add .
+  144  git commit -m "Aula 2"
+  145  git push origin main
+  146  exit
+  147  ls -la
+  148  cd Do
+  149  cd Documentos/
+  150  ls -la
+  151  cd CursoDevOps/
+  152  cd MongoDB/
+  153  ls -la
+  154  cd Desafio\ 1\ -\ MongoDB/
+  155  ls -la
+  156  touch rascunho.txt
+  157  mongosh
+  158  git status
+  159  cd ..
+  160  git status
+  161  git add .
+  162  git status
+  163  git commit -m "Aula 2 - Desafio"
+  164  git push origin main
+  165  mongosh
+  166  touch aggregators_rascunho.js
+  167  mongosh
+  168  ls -la
+  169  cd Aula 3
+  170  cd 'Aula 3'
+  171  ls -la
+  172  cd Desafio\ 1\ -\ MongoDB/
+  173  ls -la
+  174  mongosh
+  175  cd ..
+  176  git status
+  177  git add .
+  178  git commit -m "Ajustes Aula 3"
+  179  git push origin main
+  180  exit
+  181  python3 transferir.py
+  182  python3 transferir-gabarito.py 
+  183  cd ..
+  184  ls -la
+  185  git status
+  186  git add .
+  187  git status
+  188  git commit -m "Aula4"
+  189  git push origin main
+  190  LS -LA
+  191  ls -la
+  192  cd Documentos/
+  193  cd CursoDevOps/
+  194  ls -la
+  195  cd MongoDB/
+  196  ls -la
+  197  mkdir 'Aula 4'
+  198  ls -la
+  199  cd Aula 4
+  200  cd 'Aula 4'
+  201  cd ..
+  202  ls -la
+  203  python3 --version
+  204  pymongo --version
+  205  pymongo
+  206  python -m pip install pymongo
+  207  python3 -m pip install pymongo
+  208  python3 pip install pymongo
+  209  pip install pymongo
+  210  sudo apt update
+  211  sudo apt upgrade
+  212  python3 pip install pymongo
+  213  python3 -m pip install pymongo
+  214  sudo apt install pip4
+  215  sudo apt install python3-pip
+  216  python3 -pymongo
+  217  python3 -m pip install pymongo
+  218  sudo system ctl status mongodb
+  219  sudo system ctl status mongod
+  220  sudo systemctl status mongodb
+  221  cd 'Aula 4'
+  222  ls -la
+  223  touch transferir.y
+  224  touch transferir.py
+  225  vim transferir.py
+  226  touch transferir.py
+  227  vim transferir.py
+  228  mongosh
+  229  vim transferir.py
+  230  mongosh
+  231  vim /etc/mongod.conf
+  232  sudo vim /etc/mongod.conf
+  233  sudo systemctl start mongod
+  234  sudo systemctl status mongod
+  235  sudo systemctl restart mongosh
+  236  sudo systemctl restart mongod
+  237  sudo systemctl status mongod
+  238  ls -la
+  239  cd Do
+  240  cd Documentos/
+  241  ls -la
+  242  cd CursoDevOps/
+  243  ls -la
+  244  cd MongoDB/
+  245  ls -la
+  246  Cd 'Aula 4'
+  247  cd 'Aula 4'
+  248  ls -la
+  249  python3 transacao.py
+  250  time python3 transacao.py
+  251  docker status
+  252  ls -la
+  253  touch hashed_obj.py
+  254  vim hashed_obj.py 
+  255  python3 hashed_obj.py 
+  256  vim hashed_obj.py 
+  257  python3 hashed_obj.py 
+  258  cd ..
+  259  cd 'Aula 5'
+  260  ls -la
+  261  cd Aula5
+  262  ls -la
+  263  python3 hashed_obj.py 
+  264  cd ..
+  265  ls -la
+  266  git status
+  267  git add .
+  268  git commit -m 'Aula5'
+  269  git push origin main
+  270  exit
+  271* 
+  272  mongosh --port 27020
+  273  mongosh --port 27018
+  274  mongosh --port 27020
+  275  mongosh --port 27021
+  276  mongosh --port 27018
+  277  mongosh --port 27017
+  278  cd ..
+  279  cd Documentos/
+  280  cd CursoDevOps/
+  281  cd MongoDB/
+  282  git status
+  283  git add .
+  284  history >> historicoAula4.txt

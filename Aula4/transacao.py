@@ -1,7 +1,7 @@
 from pymongo import MongoClient, WriteConcern, read_concern, ReadPreference
 from multiprocessing import Process
 
-client = MongoClient()
+client = MongoClient('mongodb://localhost:27017,localhost:27018,localhost:27019')
 wc_majority = WriteConcern("majority", wtimeout=1000)
 
 # Criar novo banco Aula04
